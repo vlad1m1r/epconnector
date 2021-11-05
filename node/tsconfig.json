@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "types": ["bluebird-global", "node", "jest"],
+    "typeRoots": ["node_modules/@types"],
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "esModuleInterop": true
+  },
+  "typeAcquisition": {
+    "enable": false
+  },
+  "include": ["./typings/*.d.ts", "global.ts", "./**/*"],
+  "exclude": ["node_modules"]
+}

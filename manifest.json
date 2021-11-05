@@ -1,0 +1,79 @@
+{
+  "name": "connector-euplatesc",
+  "vendor": "vtexeurope",
+  "version": "0.0.2-beta.79",
+  "title": "VTEX Payment EuPlatesc Integration",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "6.x"
+  },
+  "scripts": {},
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "secure.euplatesc.ro",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "ManageStore"
+    },
+    {
+      "name": "OMSViewer"
+    },
+
+    {
+      "name": "ViewPayments"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexpayments.com.br",
+        "path": "/*"
+      }
+    },
+
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "registries": [
+    "smartcheckout"
+  ]
+}

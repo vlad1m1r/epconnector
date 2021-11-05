@@ -1,0 +1,37 @@
+{
+  "memory": 2048,
+  "ttl": 720,
+  "timeout": 60,
+  "minReplicas": 2,
+  "maxReplicas": 10,
+  "routes": {
+    "paymentMethods": {
+      "path": "/_v/api/euplatesc/payment-methods",
+      "public": true
+    },
+    "manifest": {
+      "path": "/_v/api/euplatesc/manifest",
+      "public": true
+    },
+    "authorizations": {
+      "path": "/_v/api/euplatesc/payments",
+      "public": true
+    },
+    "cancellations": {
+      "path": "/_v/api/euplatesc/payments/:paymentId/cancellations",
+      "public": true
+    },
+    "settlements": {
+      "path": "/_v/api/euplatesc/payments/:paymentId/settlements",
+      "public": true
+    },
+    "refunds": {
+      "path": "/_v/api/euplatesc/payments/:paymentId/refunds",
+      "public": true
+    },
+    "ipn": {
+      "path": "/_v/api/euplatesc/ipn",
+      "public": true
+    }
+  }
+}
